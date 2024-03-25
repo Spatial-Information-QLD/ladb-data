@@ -7,6 +7,7 @@ class CN(DefinedNamespace):
     _fail = True
 
     CompoundName: URIRef
+    isNameFor: URIRef
 
 
 class RCT(DefinedNamespace):
