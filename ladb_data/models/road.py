@@ -87,7 +87,7 @@ class RoadObject(LABaseModel):
     sir_identifier: SirIdentifier = Field(..., alias=SDO.identifier)
     type: str | list[str] = Field(str(ROAD.RoadObject), alias="@type")
     label: str | RoadLabel | None = Field(None, alias=SDO.name)
-    is_part_of: str = Field(None, alias=SDO.isPartOf)
+    is_part_of: str | None = Field(None, alias=SDO.isPartOf)
 
     def model_dump(self, *args, **kwargs) -> dict[str, Any]:
         frame = {
