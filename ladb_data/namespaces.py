@@ -26,3 +26,25 @@ class ROAD(DefinedNamespace):
     RoadLabel: URIRef
     RoadObject: URIRef
     RoadSegment: URIRef
+
+
+class GN(DefinedNamespace):
+    _NS = Namespace("https://linked.data.gov.au/def/gn/")
+    _fail = True
+
+    GeographicalObject: URIRef
+    GeographicalName: URIRef
+
+
+class GNPT(DefinedNamespace):
+    _NS = Namespace("https://linked.data.gov.au/def/gn-part-types/")
+    _fail = True
+
+    geographicalGivenName: URIRef
+
+
+class LC(DefinedNamespace):
+    _NS = Namespace("https://linked.data.gov.au/def/lifecycle/")
+    _fail = True
+
+    hasLifecycleStage: URIRef
